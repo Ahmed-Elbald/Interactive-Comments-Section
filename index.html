@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Title -->
+
+  <title>Frontend Mentor | Interactive comments section</title>
+
+  <!-- CSS Style Sheets -->
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <main class="comments">
+    <div class="container"></div>
+  </main>
+</body>
+
+
+<!-- Samples -->
+
+<div class="comment-sample">
+  <div class="sample">
+    <div class="wrapper">
+      <button class="reply-btn">
+        <img src="images/icon-reply.svg" alt="Reply To The Comment/Reply">
+        <span>reply</span>
+      </button>
+      <div class="edit-delete">
+        <button class="delete">
+          <img src="images/icon-delete.svg" alt="Delete The Comment/Reply">
+          <span>Delete</span>
+        </button>
+        <button class="edit">
+          <img src="images/icon-edit.svg" alt="Edit The Comment/Reply">
+          <span>Edit</span>
+        </button>
+      </div>
+      <div class="comment-text">
+        <div class="user-info">
+          <img alt="User Photo">
+          <span class="name"></span>
+          <span class="you">you</span>
+          <span class="time-passed grayish-text"></span>
+        </div>
+        <p class="grayish-text main-text">
+          <span class="replying-to"></span>
+          <span></span>
+        </p>
+      </div>
+      <div class="voting">
+        <button class="vote upvote" data-count="0">
+          <img src="images/icon-plus.svg" alt="Upvote The Comment/Reply">
+        </button>
+        <span class="votes"></span>
+        <button class="vote downvote" data-count="0">
+          <img src="images/icon-minus.svg" alt="Downvote The Comment/Reply">
+        </button>
+      </div>
+      <input type="hidden" id="id">
+    </div>
+    <div class="add-comment">
+      <form action="/" method="get">
+        <textarea placeholder="Add a comment" aria-label="add a comment"></textarea>
+        <img alt="Your Photo" id="current-user-img">
+        <input type="submit" value="REPLY">
+      </form>
+    </div>
+    <div class="replies"></div>
+  </div>
+</div>
+
+<div class="modal-sample">
+  <div class="modal">
+    <h1>Delete comment</h1>
+    <p class="grayish-text">
+      Are you sure you want to delete this comment? This will remove
+      the comment and can't be undone
+    </p>
+    <div>
+      <button class="cancel">no, cancel</button>
+      <button class="confirm">yes, delete</button>
+    </div>
+  </div>
+</div>
+
+<div class="add-comment-sample">
+  <div class="add-comment">
+    <div class="container">
+      <form action="/" method="get">
+        <textarea placeholder="Add a comment" aria-label="add a comment"></textarea>
+        <img alt="Your Photo" id="current-user-img">
+        <input type="submit" value="SEND">
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+
+</html>
