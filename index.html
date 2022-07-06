@@ -51,7 +51,7 @@
       </div>
       <div class="comment-text">
         <div class="user-info">
-          <img alt="User Photo">
+          <img src="" alt="User Photo">
           <span class="name"></span>
           <span class="you">you</span>
           <span class="time-passed grayish-text"></span>
@@ -70,12 +70,12 @@
           <img src="images/icon-minus.svg" alt="Downvote The Comment/Reply">
         </button>
       </div>
-      <input type="hidden" id="id">
+      <input type="hidden" class="id">
     </div>
     <div class="add-comment">
       <form action="/" method="get">
         <textarea placeholder="Add a comment" aria-label="add a comment"></textarea>
-        <img alt="Your Photo" id="current-user-img">
+        <img alt="Your Photo" class="current-user-img">
         <input type="submit" value="REPLY">
       </form>
     </div>
@@ -83,7 +83,7 @@
   </div>
 </div>
 
-<div class="modal-sample">
+<section class="modal-sample" aria-label="Delete Comment Modal">
   <div class="modal">
     <h1>Delete comment</h1>
     <p class="grayish-text">
@@ -95,19 +95,19 @@
       <button class="confirm">yes, delete</button>
     </div>
   </div>
-</div>
+</section>
 
-<div class="add-comment-sample">
+<section class="add-comment-sample" aria-label="Add Comment Form">
   <div class="add-comment">
     <div class="container">
       <form action="/" method="get">
         <textarea placeholder="Add a comment" aria-label="add a comment"></textarea>
-        <img alt="Your Photo" id="current-user-img">
+        <img src="" alt="Your Photo" class="current-user-img">
         <input type="submit" value="SEND">
       </form>
     </div>
   </div>
-</div>
+</section>
 
 <script src="js/main.js"></script>
 

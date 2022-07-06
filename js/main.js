@@ -443,7 +443,7 @@ function showComments(data, wrapper, commentSample, now) {
     // Getting the elements that we want to fill with data
     let commentInfo = comment.querySelector(".comment-text");
     let votes = comment.querySelector("span.votes");
-    let idInput = comment.querySelector("input#id");
+    let idInput = comment.querySelector("input.id");
 
     for (let x in i) {
 
